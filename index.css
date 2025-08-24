@@ -7,8 +7,13 @@ h2 {
   color: burlywood;
   background-color: blue;
 }
-
+/* p tag selector */
 p {
   color: brown;
   background-color: beige;
+}
+/* .para class selector */
+.para {
+  color: aliceblue;
+  background-color: black;
 }
