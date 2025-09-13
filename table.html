@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table,
+      th,
+      td {
+        margin: 10px;
+        width: 50%;
+
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th {
+        text-align: start;
+      }
+      th,
+      td {
+        min-width: 1rem;
+        min-height: 1rem;
+        padding: 10px;
+      }
+      .active {
+        background-color: #f2f2f2;
+      }
+      .col1,
+      .col3 {
+        width: 20%;
+      }
+      thead > tr {
+        height: 4rem;
+      }
+    </style>
+    <!--  -->
+    <title>Tables</title>
+  </head>
+  <body>
+    <!-- revision -->
+    <table>
+      <thead>
+        <tr>
+          <!-- atl + shift + down key -->
+          <th class="col1">Company</th>
+          <th>Contact</th>
+          <th class="col3">Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active">
+          <td class="col1">Alfreds</td>
+          <td>Futterkiste</td>
+          <td class="col3">Maria</td>
+        </tr>
+        <tr>
+          <td class="col1">Anders</td>
+          <td>Germany</td>
+          <td class="col3">Maria</td>
+        </tr>
+        <tr class="active">
+          <td class="col1">comercial</td>
+          <td>Moctezuma</td>
+          <td class="col3">Francisco</td>
+        </tr>
+        <tr>
+          <td class="col1">Chang</td>
+          <td>Mexico</td>
+          <td class="col3">Ernst</td>
+        </tr>
+        <tr class="active">
+          <td class="col1">Handel</td>
+          <td>Roland</td>
+          <td class="col3">Mendel</td>
+        </tr>
+        <tr>
+          <td class="col1">Austria</td>
+          <td>Island</td>
+          <td class="col3">Trading</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <!-- horizontal tables -->
+    <table>
+      <tr class="active">
+        <th>First Name</th>
+        <td>Muhammad Zeeshan</td>
+      </tr>
+      <tr>
+        <th>Last Name</th>
+        <td>Khan</td>
+      </tr>
+      <tr class="active">
+        <th>Age</th>
+        <td>18</td>
+      </tr>
+    </table>
+    <br />
+    <!-- a header can represent multiple columns -->
+    <table>
+      <tr>
+        <th colspan="2" style="text-align: center">Name</th>
+        <th colspan="1">Phone</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>9238429304</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>9840923840</td>
+      </tr>
+    </table>
+    <br />
+    <!-- caption ?? -->
+    <table>
+      <caption>
+        Monthly savings
+      </caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$50</td>
+      </tr>
+    </table>
+    <!-- different designs -->
+    <table>
+      <tr>
+        <td rowspan="2"><b>April</b></td>
+        <td><b>Date</b></td>
+        <td><b>Event</b></td>
+        <td><b>Amount</b></td>
+      </tr>
+      <tr>
+        <td>01-04-2025</td>
+        <td>Stationery Purchase</td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>10-04-2025</td>
+        <td>Office Rent</td>
+        <td>$500</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>15-04-2025</td>
+        <td>Utility Bills</td>
+        <td>$120</td>
+      </tr>
+    </table>
+    <!-- col group -->
+    <table>
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+    </table>
+  </body>
+</html>
