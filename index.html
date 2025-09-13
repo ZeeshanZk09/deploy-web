@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/download.jpeg" type="image/jpeg" />
+    <title>example.com</title>
   </head>
   <body>
     <a href="#first">First</a>
@@ -70,6 +71,14 @@
     <!-- line break ctrl + / 
      -->
     <hr />
+    <h1>Picture tag</h1>
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/download.jpeg" />
+      <source media="(max-width: 800px)" srcset="./assets/youtube.png" />
+
+      <img src="./assets/download.jpeg" alt="" />
+    </picture>
+    <img src="" alt="" width="" height="" />
     <abbr title="Bachelors of Medicnce and Bachelors of Science">MBBS</abbr>
     <address>
       Written by John Doe.<br />
@@ -122,5 +131,40 @@
       impedit? Laudantium ad reiciendis illum expedita vel ipsam, aut quidem! Eos minima sit quaerat
       dignissimos vitae eveniet?
     </p>
+    <h1>Table</h1>
+    <!-- student name, roll number, english, urdu, math, total -->
+    <table border="1">
+      <!-- thead, tbody, tfoot, th, td, tr -->
+      <!-- tr => row banay ga -->
+      <!-- td, th => column banay ge -->
+      <thead>
+        <tr>
+          <th>Roll no</th>
+          <th>Student Name</th>
+          <th>English</th>
+          <th>Urdu</th>
+          <th>Maths</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9832</td>
+          <td>Asad</td>
+          <td>64</td>
+          <td>50</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2" style="text-align: left">Obtained Marks</th>
+          <td colspan="3" style="text-align: right">899</td>
+        </tr>
+        <tr>
+          <th colspan="2" style="text-align: left">Total Marks</th>
+          <td colspan="3" style="text-align: right">1100</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
