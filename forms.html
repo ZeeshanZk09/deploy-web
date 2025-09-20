@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form name="sign-up" id="sign-up" autocomplete="on">
+      <fieldset>
+        <label for="first-name">First Name:</label>
+        <input id="first-name" type="text" />
+        <label for="last_name">last Name:</label>
+        <input id="last_name" type="text" />
+      </fieldset>
+
+      <input type="radio" id="html" name="html" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="html" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input type="radio" id="javascript" name="html" value="JavaScript" />
+      <label for="javascript">JavaScript</label>
+      <br />
+      <br />
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male:</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female:</label>
+      <br />
+      <br />
+    </form>
+
+    <form name="form" autocomplete="on">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      const form = document.forms.namedItem('form');
+      const bike = document.getElementById('vehicle1');
+      const car = document.getElementById('vehicle2');
+      const boat = document.getElementById('vehicle3');
+      console.log(form, bike.value, car.value, boat.value);
+
+      form.addevent;
+
+      function formInput(e) {
+        e.preventDefault();
+      }
+    </script>
+  </body>
+</html>
